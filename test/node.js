@@ -1,12 +1,5 @@
-var Lab = require('lab')
-var Code = require('code')
-var lab = exports.lab = Lab.script()
-
-var experiment = lab.experiment
-var test = lab.test
-var beforeEach = lab.beforeEach
-var afterEach = lab.afterEach
-// var expect = Code.expect
+/* eslint-env mocha */
+'use strict'
 
 var multiaddr = require('multiaddr')
 var Id = require('ipfs-peer-id')
@@ -33,8 +26,8 @@ afterEach(function (done) {
   done()
 })
 
-experiment('PING', function () {
-  test('ECHO', function (done) {
+describe('ping', function () {
+  it('ECHO', function (done) {
     Ping.pingEcho(swarmB)
 
     var p = new Ping(swarmA, peerB)
@@ -45,5 +38,4 @@ experiment('PING', function () {
       done()
     })
   })
-
 })

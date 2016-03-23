@@ -2,10 +2,20 @@
   "name": "libp2p-ping",
   "version": "0.1.1",
   "description": "Node.js IPFS Ping protocol implementation",
-  "main": "src/index.js",
+  "main": "lib/index.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/lab tests/*-test.js"
+    "lint": "dignified-lint",
+    "test": "dignified-test",
+    "test:node": "dignified-test node",
+    "test:browser": "dignified-test browser",
+    "build": "dignified-build",
+    "release": "dignified-release"
   },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/diasdavid/js-ipfs-ping.git"
@@ -20,13 +30,13 @@
   },
   "homepage": "https://github.com/diasdavid/js-ipfs-ping",
   "devDependencies": {
-    "code": "^1.4.1",
+    "chai": "^3.5.0",
+    "dignified.js": "github:dignifiedquire/dignified.js",
     "ipfs-peer": "^0.3.0",
     "ipfs-peer-id": "^0.3.0",
-    "ipfs-swarm": "^0.1.1",
-    "lab": "^5.13.0",
+    "ipfs-swarm": "^0.4.0",
     "multiaddr": "^1.0.0",
-    "standard": "^4.5.4"
+    "pre-commit": "^1.1.2"
   },
   "dependencies": {
     "async-buffered-reader": "^1.2.1"
