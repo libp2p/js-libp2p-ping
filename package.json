@@ -39,7 +39,7 @@
     "libp2p-swarm": "^0.26.0",
     "libp2p-tcp": "^0.8.1",
     "multiaddr": "^2.0.2",
-    "peer-id": "^0.7.0",
+    "peer-id": "^0.8.0",
     "peer-info": "^0.7.0",
     "pre-commit": "^1.1.2",
     "run-parallel": "^1.1.6"
