@@ -34,7 +34,7 @@
   "devDependencies": {
     "aegir": "^9.1.1",
     "chai": "^3.5.0",
-    "debug": "^2.2.0",
+    "debug": "^2.3.3",
     "gulp": "^3.9.1",
     "libp2p-swarm": "^0.26.0",
     "libp2p-tcp": "^0.8.1",
