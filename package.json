@@ -44,7 +44,7 @@
     "run-parallel": "^1.1.6"
   },
   "dependencies": {
-    "libp2p-crypto": "^0.7.3",
+    "libp2p-crypto": "^0.8.1",
     "pull-handshake": "^1.1.4",
     "pull-stream": "^3.5.0"
   },
