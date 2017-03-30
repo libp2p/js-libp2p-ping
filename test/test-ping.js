@@ -26,7 +26,7 @@ describe('libp2p ping', () => {
         PeerInfo.create((err, peerInfo) => {
           expect(err).to.not.exist()
           peerA = peerInfo
-          peerA.multiaddr.add(multiaddr('/ip4/127.0.0.1/tcp/0'))
+          peerA.multiaddrs.add(multiaddr('/ip4/127.0.0.1/tcp/0'))
           cb()
         })
       },
@@ -34,7 +34,7 @@ describe('libp2p ping', () => {
         PeerInfo.create((err, peerInfo) => {
           expect(err).to.not.exist()
           peerB = peerInfo
-          peerB.multiaddr.add(multiaddr('/ip4/127.0.0.1/tcp/0'))
+          peerB.multiaddrs.add(multiaddr('/ip4/127.0.0.1/tcp/0'))
           cb()
         })
       },
