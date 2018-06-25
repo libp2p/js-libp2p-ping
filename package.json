@@ -2,6 +2,7 @@
   "name": "libp2p-ping",
   "version": "0.8.0",
   "description": "libp2p Ping protocol implementation",
+  "leadMaintainer": "Vasco Santos <vasco.santos@moxy.studio>",
   "main": "src/index.js",
   "pre-commit": [
     "lint",
