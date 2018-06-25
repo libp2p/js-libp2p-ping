@@ -4,7 +4,7 @@
   "description": "libp2p Ping protocol implementation",
   "leadMaintainer": "Vasco Santos <vasco.santos@moxy.studio>",
   "main": "src/index.js",
-  "pre-commit": [
+  "pre-push": [
     "lint",
     "test"
   ],
@@ -24,7 +24,6 @@
   "keywords": [
     "IPFS"
   ],
-  "author": "David Dias <daviddias@ipfs.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/libp2p/js-libp2p-ping/issues"
@@ -43,7 +42,6 @@
     "peer-book": "^0.7.0",
     "peer-id": "~0.10.7",
     "peer-info": "~0.14.1",
-    "pre-commit": "^1.2.2",
     "run-parallel": "^1.1.8"
   },
   "dependencies": {
