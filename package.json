@@ -49,7 +49,7 @@
     "run-parallel": "^1.1.9"
   },
   "dependencies": {
-    "libp2p-crypto": "~0.15.0",
+    "libp2p-crypto": "libp2p/js-libp2p-crypto#feat/bundle-size",
     "pull-handshake": "^1.1.4",
     "pull-stream": "^3.6.9"
   },
